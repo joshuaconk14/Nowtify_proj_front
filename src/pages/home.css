@@ -5,14 +5,14 @@
     margin: 100px auto; /* padding */
     margin-top: -50px; /* Moves header up */
     animation: homeFade 2s ease-in-out forwards;
-}
-
-.fade {
+  }
+  
+  .fade {
     animation: homeFade 2s ease-in-out forwards;
-}
-
-/* class for login button */
-.login-button {
+  }
+  
+  /* class for login button */
+  .login-button {
     position: absolute; /* wont be affected by other elements */
     top: 10px;
     right: 20px;
@@ -20,21 +20,21 @@
     padding: 10px 0;
     font-size: 1.0em;
     animation: homeFade 2s ease-in-out forwards;
-}
-
-
-/* class for slogan */
-.slogan {
+  }
+  
+  
+  /* class for slogan */
+  .slogan {
     font-size: 1.6em;
     font-weight: bold;
     padding: 20px 0;
     animation: homeFade 2s ease-in-out forwards;
-}
-
-
-
-/* defining the header's fade with headerFade */
-@keyframes homeFade {
+  }
+  
+  
+  
+  /* defining the header's fade with headerFade */
+  @keyframes homeFade {
     0% {
         opacity: 0;
         transform: translateY(20px);
@@ -43,4 +43,4 @@
         opacity: 1;
         transform: translateY(0px);
     }
-}
+  }
