@@ -4,15 +4,14 @@ import axios from "axios";
 const App = () => {
     const [message, setMessage] = useState("");
 
-    // Set the base URL for the API
-    const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:5003';
-
     useEffect(() => {
-        axios.get(`${API_BASE_URL}/api`)
-            .then((response) => {
+        axios.get("https://new-backendd-6731a6c3a88d.herokuapp.com/api")
+            if (response.status === 200) {
                 setMessage(response.data.message);
-            })
-            .catch((error) => console.error(error));
+            }
+            else {
+                setMessage("Failed to fetch data from backend");
+            }
     }, []);
 
     return (
