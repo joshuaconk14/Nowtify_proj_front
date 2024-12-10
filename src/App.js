@@ -4,11 +4,11 @@ import axios from "axios";
 const App = () => {
     const [message, setMessage] = useState("");
 
-    // Set the base URL for the API
-    const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:5008';
+    // // Set the base URL for the API
+    // const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:5008';
 
     useEffect(() => {
-        axios.get(`${API_BASE_URL}/api`)
+        axios.get("https://new-backendd-6731a6c3a88d.herokuapp.com/api")
             .then(response => setMessage(response.data.message))
             .catch(error => {
                 console.error(error);
