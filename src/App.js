@@ -11,9 +11,8 @@ const App = () => {
         axios.get(`${API_BASE_URL}/api`)
             .then((response) => {
                 if (response.status === 200) {
-                    setMessage(response.data.message);
-                } else {
-                    setMessage("Failed to fetch data from backend");
+                    // setMessage(response.data.message);
+                    setMessage("data successfully fetched");
                 }
             })
             .catch((error) => {
