@@ -9,26 +9,19 @@ const App = () => {
 
     useEffect(() => {
         axios.get(`${API_BASE_URL}/api`)
-            .then(response => setMessage(response.data.message))
-            .catch(error => {
+            .then((response) => {
+                if (response.status === 200) {
+                    setMessage(response.data.message);
+                } else {
+                    setMessage("Failed to fetch data from backend");
+                }
+            })
+            .catch((error) => {
                 console.error(error);
                 setMessage("Failed to fetch data from backend");
             });
     }, []);
 
-
-
-    // .then((response) => {
-    //     if (response.status === 200) {
-    //         setMessage(response.data.message);
-    //     } else {
-    //         setMessage("Failed to fetch data from backend");
-    //     }
-    // })
-    // .catch((error) => {
-    //     console.error(error);
-    //     setMessage("Failed to fetch data from backend");
-    // });
 
     return (
         <div>
