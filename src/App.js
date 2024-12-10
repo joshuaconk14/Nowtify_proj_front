@@ -4,8 +4,11 @@ import axios from "axios";
 const App = () => {
     const [message, setMessage] = useState("");
 
+    // Set the base URL for the API
+    const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:5003';
+
     useEffect(() => {
-        axios.get("/api")
+        axios.get(`${API_BASE_URL}/api`)
             .then((response) => {
                 setMessage(response.data.message);
             })
