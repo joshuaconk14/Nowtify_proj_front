@@ -6,12 +6,17 @@ const App = () => {
 
     useEffect(() => {
         axios.get("https://new-backendd-6731a6c3a88d.herokuapp.com/api")
-            if (response.status === 200) {
-                setMessage(response.data.message);
-            }
-            else {
+            .then((response) => {
+                if (response.status === 200) {
+                    setMessage(response.data.message);
+                } else {
+                    setMessage("Failed to fetch data from backend");
+                }
+            })
+            .catch((error) => {
+                console.error(error);
                 setMessage("Failed to fetch data from backend");
-            }
+            });
     }, []);
 
     return (
