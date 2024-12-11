@@ -1,0 +1,42 @@
+/* defining design for the whole app */
+/* on CSS files for the pages, 'classes' used to specify object being modified */
+
+body {
+    /* background */
+    display: flex;
+    height: 100vh; /* height of container */
+    margin: 0;
+    justify-content: center; /* vertical*/
+    flex-direction: column; /* Arranges header and buttons vertically */
+    align-items: center; /* horizontal */
+    background: linear-gradient(135deg, #6a0dad, #1e90ff);
+
+    /* text */
+    color: white; /* any text in the body */
+    font-family: Arial;
+}
+
+h1 {
+    font-size: 4em;
+    text-align: center;
+}
+
+
+p {
+    text-align: center;
+}
+
+
+button {
+    text-align: center; /* inside text only */
+    display: block; /* buttons displayed vertically (column form) */
+    margin: 20px auto; /* padding */
+    padding: 10px 0; /* Removes padding on sides to maintain fixed width */
+    width: 150px; /* Fixed width for same button size */
+    font-size: 1.2em;
+    border: none;
+    font-family: 'Arial';
+    border-radius: 20px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
+    cursor: pointer; /* pointer when hovering over button */
+}

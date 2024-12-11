@@ -1,0 +1,152 @@
+.dashboard-body {
+  background: #6834ba;
+  display: flex;
+  flex-direction: column; /* Stack divs vertically */
+  height: 100vh; /* Full viewport height */
+  overflow-y: auto; /* Ensure scrolling if content overflows */
+}
+
+.top-section {
+  background: #2c0d5f;
+  flex: 0 0 auto; /* Prevent resizing and keep it fixed at the top */
+  text-align: center; /* Center-align content */
+  margin-bottom: 20px; /* Space below the top section */
+}
+
+.hello {
+  font-size: 2em;
+  color: white;
+  margin: 0;
+  padding-top: 100px;
+}
+
+.welcome {
+  font-size: 1.5em;
+  color: white;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 100px;
+}
+
+.logout {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  width: 80px;
+  padding: 10px 0;
+  font-size: 1em;
+}
+
+
+
+
+
+
+
+.middle-section {
+  flex: 0 0 auto; /* Prevent resizing */
+  display: flex;
+  flex-direction: row; /* Stack divs vertically */
+  margin-bottom: 20px;
+  padding: 10px;
+}
+
+.spotify-connect-button {
+  margin: 20px auto; /* padding */
+  padding: 10px 0; /* Removes padding on sides to maintain fixed width */
+  width: 150px;
+  height: 50px;
+  border: none;
+  font-family: 'Arial';
+  border-radius: 20px;
+  margin-right: auto; /* Pushes the button to the right edge */
+  margin-left: 140px; /* Optional clarity */
+
+  /* text */
+  text-align: center;
+  background-color: rgb(41, 224, 41);
+  color: black;
+  font-size: 0.9em;
+}
+
+.your-playlists {
+  font-size: 1.5em;
+  color: white;
+  margin: 20px auto; /* Pushes the button to the right edge */ /* Pushes the button to the right edge */
+  margin-right: 410px;
+}
+
+
+
+
+
+.bottom-section {
+  flex: 1 1 auto; /* Allow this section to grow and scroll if necessary */
+  overflow-y: auto; /* Scrollable if the playlists overflow */
+}
+
+
+.playlists-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.playlist-card {
+  display: flex;
+  background: #542b95;
+  border: 1px solid #391851;
+  border-radius: 8px;
+  padding: 15px;
+  height: auto;
+  width: calc(25% - 20px); /* Dynamic width, responsive */
+  max-width: 300px; /* Maximum card width */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s;
+  text-align: center;
+  flex-direction: column; /* Stack image, title, and link */
+  justify-content: space-between; /* Ensure even spacing */
+  transition: transform 0.2s; /* Animation for hover effect */
+}
+
+.playlist-card:hover {
+  transform: scale(1.05);
+}
+
+.playlist-unlink {
+  margin-top: 20px; /* Add space between elements */
+  font-size: 0.9em;
+}
+
+.playlist-image {
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 4px; /* Rounded corners for images */
+  object-fit: cover; /* Ensures image fits nicely */
+}
+
+.playlist-title {
+  font-size: 1em; /* Title font size adjusts with card */
+  margin: 10px 0; /* Margin around title */
+  color: #fff; /* White text for visibility */
+  word-wrap: break-word; /* Prevent long text overflow */
+}
+
+.open-spotify {
+  display: inline-block; /* Make link a block element */
+  margin-top: 10px; /* Margin above link */
+  color: #1DB954; /* Spotify green */
+  text-decoration: none; /* Remove underline */
+  font-size: 0.9em; /* Match button size */
+}
+
+.open-spotify:hover {
+  text-decoration: underline; /* Underline on hover */
+}
+
+
+
+
+
+
