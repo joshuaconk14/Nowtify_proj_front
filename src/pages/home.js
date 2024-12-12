@@ -21,7 +21,7 @@ function Home() {
   }
 
 
-  //  step 2) buttons have function call state variable to make it true
+  //  step 2) buttons have function call state variable to make it true 
   return (
     
     <div>
