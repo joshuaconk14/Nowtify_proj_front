@@ -57,7 +57,7 @@ function App() {
           <Route path= "/spotauth" element={<SpotAuth />} />
         </Routes>
       </Router>
-    </div>
+    </div> 
   );
 
 }
