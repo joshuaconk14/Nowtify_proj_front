@@ -46,7 +46,7 @@ import SpotAuth from "./pages/spotauth";
 
 function App() {
   // creating routes for importing pages
-  return (
+  return ( 
     <div className = "App">
       <Router>
       <Routes>
