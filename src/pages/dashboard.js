@@ -141,14 +141,15 @@ function Dashboard() {
   
       {/* Middle Section (Spotify button) */}
       <div className="middle-section">
+        <div className = "row">
         <button
           onClick={() => setGoToUserAuth(true)}
           className="spotify-connect-button"
-        >
-          Connect to Spotify
+        >Connect to Spotify
         </button>
-        <h3 className="your-playlists">Your Playlists</h3>
+        <h3 className="your-playlists-text">Your Playlists</h3>
       </div>
+        </div>
   
       {/* Bottom Section (Playlists) */}
       <div className="bottom-section">

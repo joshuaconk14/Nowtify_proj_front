@@ -48,3 +48,14 @@ button {
     cursor: pointer; /* pointer when hovering over button */
     
 }
+
+.row{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    gap: 50px;
+}
+.col{
+    display: flex;
+    width: 50%;
+}

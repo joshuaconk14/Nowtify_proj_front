@@ -1,3 +1,7 @@
+body{
+  background: #6834ba;
+}
+
 
 
 .container{
@@ -6,10 +10,10 @@
 }
 
 .dashboard-body {
-  background: #6834ba;
   display: flex;
   flex-direction: column; /* Stack divs vertically */
   height: 100vh; /* Full viewport height */
+  width:100%;
   overflow-y: auto; /* Ensure scrolling if content overflows */
 }
 
@@ -21,6 +25,7 @@
 }
 
 .hello {
+  position: relative;
   font-size: 2em;
   color: white;
   margin: 0;
@@ -28,6 +33,7 @@
 }
 
 .welcome {
+  position: relative;
   font-size: 1.5em;
   color: white;
   margin: 0;
@@ -36,12 +42,12 @@
 }
 
 .logout {
-  position: absolute;
+  position: absolute; /* wont be affected by other elements */
   top: 10px;
   right: 20px;
   width: 80px;
   padding: 10px 0;
-  font-size: 1em;
+  font-size: 1.0em;
 }
 
 
@@ -76,11 +82,12 @@
   font-size: 0.9em;
 }
 
-.your-playlists {
+.your-playlists-text {
+  position: relative;
   font-size: 1.5em;
   color: white;
-  margin: 20px auto; /* Pushes the button to the right edge */ /* Pushes the button to the right edge */
-  margin-right: 410px;
+  margin: 20px auto; 
+  margin-right: 510px;
 }
 
 
