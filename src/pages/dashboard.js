@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { useNavigate } from 'react-router-dom';
 import './dashboard.css';
+import './App.css';
 
 function Dashboard() {
   const [user, setUser] = React.useState("");
@@ -127,15 +128,16 @@ function Dashboard() {
 
   // Conditionally render content based on `user`
   return (
-    <div className="dashboard-body">
-      {/* Top Section */}
-      <div className="top-section">
-        <h1 className="hello">Hello, {user}!</h1>
-        <h2 className="welcome">Welcome to your Dashboard!</h2>
-        <button type="button" onClick={logout} className="logout">
-          Logout
-        </button>
-      </div>
+      <div className="container">
+        <div className="dashboard-body">
+        {/* Top Section */}
+          <div className="top-section">
+            <h1 className="hello">Hello, {user}!</h1>
+            <h2 className="welcome">Welcome to your Dashboard!</h2>
+            <button type="button" onClick={logout} className="logout">
+              Logout
+            </button>
+          </div>
   
       {/* Middle Section (Spotify button) */}
       <div className="middle-section">
@@ -184,6 +186,9 @@ function Dashboard() {
         </div>
       </div>
     </div>
+  </div>
+    
+    
   );
 }
 

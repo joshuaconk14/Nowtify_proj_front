@@ -1,5 +1,12 @@
 /* defining design for the whole app */
 /* on CSS files for the pages, 'classes' used to specify object being modified */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 
 body {
     /* background */
@@ -39,4 +46,5 @@ button {
     border-radius: 20px;
     box-shadow: 0 10px 25px rgba(0, 0, 0, 0.3);
     cursor: pointer; /* pointer when hovering over button */
+    
 }

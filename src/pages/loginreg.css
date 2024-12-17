@@ -1,5 +1,6 @@
 /* styling for login button */
 
+
 .container {
     display: flex;
 }
@@ -47,9 +48,9 @@
 
     /* text */
     text-align: left;
+    font-family: 'Arial';
     padding-left: 20px; /* when aligning to left, gives padding so not all the way left */
     color: #606060;
-
 }
 
 .password-box {
@@ -67,6 +68,7 @@
 
     /* text */
     text-align: left;
+    font-family: 'Arial';
     padding-left: 20px; /* when aligning to left, gives padding so not all the way left */
     color: #606060;
 }
@@ -86,6 +88,7 @@
 
     /* text */
     text-align: center;
+    font-family: 'Arial';
     padding-left: 20px; /* when aligning to left, gives padding so not all the way left */
     color: white;
 }
