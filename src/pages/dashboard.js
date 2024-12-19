@@ -128,8 +128,7 @@ function Dashboard() {
 
   // Conditionally render content based on `user`
   return (
-      <div className="container">
-        <div className="dashboard-body">
+    <div className="container">
         {/* Top Section */}
           <div className="top-section">
             <h1 className="hello">Hello, {user}!</h1>
@@ -142,14 +141,14 @@ function Dashboard() {
       {/* Middle Section (Spotify button) */}
       <div className="middle-section">
         <div className = "row">
-        <button
-          onClick={() => setGoToUserAuth(true)}
-          className="spotify-connect-button"
-        >Connect to Spotify
-        </button>
+          <button
+            onClick={() => setGoToUserAuth(true)}
+            className="spotify-connect-button"
+          >Connect to Spotify
+          </button>
         <h3 className="your-playlists-text">Your Playlists</h3>
-      </div>
         </div>
+      </div>
   
       {/* Bottom Section (Playlists) */}
       <div className="bottom-section">
@@ -186,7 +185,6 @@ function Dashboard() {
           )}
         </div>
       </div>
-    </div>
   </div>
     
     

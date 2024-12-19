@@ -2,7 +2,19 @@
 
 
 .container {
+    width: 100%;
+    height: 100vh;
     display: flex;
+    justify-content: center; /* center the CONTAINER's objects */
+    align-items: center;
+}
+
+/* div is holding the text inside it and represents 'big rectangle' */
+.big-rectangle {
+    width: 1000px;
+    height: 650px;
+    background: linear-gradient(to right, #6834ba 60%, white 30%);
+    border-radius: 20px;
 }
 
 .login-header {
@@ -21,14 +33,6 @@
     top: 180px;
     right: 200px;
     margin-top: -50px;
-}
-
-/* div is holding the text inside it and represents 'big rectangle' */
-.big-rectangle {
-    width: 1000px;
-    height: 650px;
-    background: linear-gradient(to right, #6834ba 60%, white 30%);
-    border-radius: 20px;
 }
 
 

@@ -9,13 +9,6 @@
 
 
 body {
-    /* background */
-    display: flex;
-    height: 100vh; /* height of container */
-    margin: 0;
-    justify-content: center; /* vertical*/
-    flex-direction: column; /* Arranges header and buttons vertically */
-    align-items: center; /* horizontal */
     background: linear-gradient(135deg, #6a0dad, #1e90ff);
 
     /* text */

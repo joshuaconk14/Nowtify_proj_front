@@ -1,25 +1,14 @@
-body{
-  background: #6834ba;
-}
-
-
-
 .container{
   width: 100%;
-  position: relative;
-}
-
-.dashboard-body {
-  display: flex;
-  flex-direction: column; /* Stack divs vertically */
-  height: 100vh; /* Full viewport height */
-  width:100%;
-  overflow-y: auto; /* Ensure scrolling if content overflows */
+  height: 100vh;
 }
 
 .top-section {
-  background: #2c0d5f;
-  flex: 0 0 auto; /* Prevent resizing and keep it fixed at the top */
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* center the CONTAINER's objects */
+  align-items: center;
+  width: 100%;
   text-align: center; /* Center-align content */
   margin-bottom: 20px; /* Space below the top section */
 }
@@ -57,23 +46,29 @@ body{
 
 
 .middle-section {
-  flex: 0 0 auto; /* Prevent resizing */
   display: flex;
   flex-direction: row; /* Stack divs vertically */
-  margin-bottom: 20px;
+  justify-content: center; /* center the CONTAINER's objects */
+  align-items: center;
+  width: 100%;
   padding: 10px;
+  background: #2c0d5f;
 }
 
 .spotify-connect-button {
-  margin: 20px auto; /* padding */
-  padding: 10px 0; /* Removes padding on sides to maintain fixed width */
-  width: 150px;
+  position: relative;
+  margin: 20px; /* Center button with margin */
+  padding: 10px 20px; /* Adjust padding for button */
+  width: 200px;
   height: 50px;
   border: none;
   font-family: 'Arial';
-  border-radius: 20px;
-  margin-right: auto; /* Pushes the button to the right edge */
-  margin-left: 140px; /* Optional clarity */
+  border-radius: 20px; /* Rounded corners */
+  background-color: rgb(41, 224, 41);
+  color: black;
+  font-size: 1em;
+  cursor: pointer;
+  transition: background-color 0.3s;
 
   /* text */
   text-align: center;
@@ -83,11 +78,10 @@ body{
 }
 
 .your-playlists-text {
-  position: relative;
+  padding-right: 300px;
   font-size: 1.5em;
   color: white;
-  margin: 20px auto; 
-  margin-right: 510px;
+  margin: 20px auto;
 }
 
 
@@ -95,8 +89,13 @@ body{
 
 
 .bottom-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
   flex: 1 1 auto; /* Allow this section to grow and scroll if necessary */
   overflow-y: auto; /* Scrollable if the playlists overflow */
+  background: #350e72;
 }
 
 
