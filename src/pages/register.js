@@ -16,8 +16,29 @@ function Register() {
   // Set the base URL for the API
   const API_BASE_URL = process.env.REACT_APP_API_BASE_URL || 'http://localhost:5004';
 
-  
+  // password validation
+  const checkRegister = async (e) => {
+    e.preventDefault();
+    // Reset error message before validating again
+    setError('');
 
+    if (username.length < 3) {
+      setError('Username must be at least 3 characters long');
+      return; // Exit the entire function if the password is invalid
+    }
+
+    // Check password length and criteria
+    const passwordRegex = /^(?=.*[0-9])(?=.*[!@#$%^&*])[A-Za-z\d!@#$%^&*]{8,}$/;
+    // if password does not meet criteria
+    if (!passwordRegex.test(password)) {
+        setError('Password must be at least 8 characters long, contain at least one number, and one special character.');
+        return; // Exit the entire function if the password is invalid
+    }
+    handleRegister(e);
+  };
+  
+  
+  // handle password registration once all criteria are met
   const handleRegister = async (e) => {
     try {
       e.preventDefault()
@@ -61,7 +82,7 @@ function Register() {
             onChange={(e) => setPassword(e.target.value)}
             className="password-box"
           />
-          <button type="button" onClick={handleRegister} className="login-submit">
+          <button type="button" onClick={checkRegister} className="login-submit">
             Submit
           </button>
           {error && <p className="error-msg">{error}</p>}

@@ -171,13 +171,10 @@
 
 
 @media (max-width: 940px) {
-  button {
-    width: 100px;
-  }
-
   .playlist-unlink {
     margin-top: 20px; /* Add space between elements */
     font-size: 0.75em;
+    width: 100px;
   }
 }
 

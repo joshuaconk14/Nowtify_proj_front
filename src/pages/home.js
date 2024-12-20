@@ -23,15 +23,14 @@ function Home() {
 
   //  step 2) buttons have function call state variable to make it true 
   return (
-    <div>
-        <div className="container">
-            <div className="nowtify-home-image"><img src={nowtifyHome} alt="nowtify-home" /></div>
-            <h1 className="nowtify-header">Nowtify</h1>
-            <p className="slogan" >Find the perfect playlist for anything.</p>
-            <p className="fade">No Nowtify account? Create an account here</p>
-            <button onClick = { () => setGoToRegister(true)} className="fade">Register</button>
-            <button onClick = { () => setGoToLogin(true)} className="login-button" >Login</button>
-        </div>
+    <div className="container">
+       <div className="nowtify-home-image"><img src={nowtifyHome} alt="nowtify-home" />
+       </div>
+          <h1 className="nowtify-header">Nowtify</h1>
+          <p className="slogan" >Find the perfect playlist for anything.</p>
+          <p className="fade smaller-p">No Nowtify account? Create an account here</p>
+          <button onClick = { () => setGoToRegister(true)} className="fade">Register</button>
+          <button onClick = { () => setGoToLogin(true)} className="login-button" >Login</button>
     </div>
   );
 }
