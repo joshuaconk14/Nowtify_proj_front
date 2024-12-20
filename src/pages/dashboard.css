@@ -35,7 +35,6 @@
   top: 10px;
   right: 20px;
   width: 80px;
-  padding: 10px 0;
   font-size: 1.0em;
 }
 
@@ -59,12 +58,12 @@
   position: relative;
   margin: 20px; /* Center button with margin */
   padding: 10px 20px; /* Adjust padding for button */
-  width: 200px;
+  width: 170px;
   height: 50px;
   border: none;
   font-family: 'Arial';
   border-radius: 20px; /* Rounded corners */
-  background-color: rgb(41, 224, 41);
+  background-color: rgb(43, 211, 43);
   color: black;
   font-size: 1em;
   cursor: pointer;
@@ -72,17 +71,24 @@
 
   /* text */
   text-align: center;
-  background-color: rgb(41, 224, 41);
   color: black;
   font-size: 0.9em;
 }
 
+.spotify-connect-button:hover {
+  background-color: #0ced5b;
+}
+
 .your-playlists-text {
-  padding-right: 300px;
   font-size: 1.5em;
   color: white;
   margin: 20px auto;
 }
+
+.title-mover {
+  margin-inline: 120px;
+}
+
 
 
 
@@ -95,6 +101,7 @@
   width: 100%;
   flex: 1 1 auto; /* Allow this section to grow and scroll if necessary */
   overflow-y: auto; /* Scrollable if the playlists overflow */
+  min-height: 200px;
   background: #350e72;
 }
 
@@ -104,11 +111,15 @@
   flex-wrap: wrap;
   gap: 20px;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 20px; /* Adjust this value as needed */
+  padding: 80px; /* Optional: Add padding for better spacing */
+  overflow-y: auto; /* Allow scrolling if content overflows */
+  max-height: calc(100vh - 300px);
 }
 
 .playlist-card {
   display: flex;
+  flex-direction: column; /* Stack image, title, and link */
   background: #542b95;
   border: 1px solid #391851;
   border-radius: 8px;
@@ -119,7 +130,6 @@
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
   transition: transform 0.2s;
   text-align: center;
-  flex-direction: column; /* Stack image, title, and link */
   justify-content: space-between; /* Ensure even spacing */
   transition: transform 0.2s; /* Animation for hover effect */
 }
@@ -159,6 +169,64 @@
 }
 
 
+
+@media (max-width: 940px) {
+  button {
+    width: 100px;
+  }
+
+  .playlist-unlink {
+    margin-top: 20px; /* Add space between elements */
+    font-size: 0.75em;
+  }
+}
+
+
+@media (max-width: 740px) {
+  .title-mover {
+    margin-inline: 50px;
+  }
+
+  .playlist-card {
+    width: calc(33.33% - 20px); /* 2 cards per row on medium screens */
+  }
+}
+
+
+@media (max-width: 600px) {
+  .playlists-container {
+    padding: 5px;
+  }
+}
+
+
+
+@media (max-width: 560px) {
+  .title-mover {
+    display: none;
+  }
+  .hello {
+    padding-top: 200px;
+  }
+  .welcome {
+    padding-bottom: 50px;
+  }
+  button {
+    width: 80px;
+  }
+
+  .playlist-unlink {
+    margin-top: 20px; /* Add space between elements */
+    font-size: 0.65em;
+  }
+}
+
+
+@media (max-width: 343px) {
+  .spotify-connect-button {
+    font-size:0.65em;
+  }
+}
 
 
 

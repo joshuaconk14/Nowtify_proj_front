@@ -45,7 +45,7 @@ function Register() {
     <div className="container">
       <div className="big-rectangle">
         <h1 className="login-header">Register</h1>
-        <p className="welcome-back-text">Register here</p>
+        <p className="welcome-back-text">Sign up here</p>
         <form>
           <input
             type="text"

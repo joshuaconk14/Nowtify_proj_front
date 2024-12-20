@@ -146,7 +146,8 @@ function Dashboard() {
             className="spotify-connect-button"
           >Connect to Spotify
           </button>
-        <h3 className="your-playlists-text">Your Playlists</h3>
+          <h3 className="your-playlists-text">Your Playlists</h3>
+          <div className="title-mover"></div>
         </div>
       </div>
   
